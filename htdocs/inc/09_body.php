@@ -1,8 +1,7 @@
 <?php
-print "<body class=dark-theme>";
 $t = $_COOKIE['theme'];
 
-if($t == "")
+if($t == "light")
 $clas = "";
 else
 $clas = "dark-theme";
