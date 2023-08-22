@@ -39,17 +39,28 @@ $link[$i][url] = "/stats";
 $link[$i][name] = "Stats";
 $link[$i][item] = "stats";
 
-/*
+// Task #3 нужно создать новый пункт в центральном меню (там где Airdrops, Stats, Referrals) - пункт test
 $i++;
 $link[$i][url] = "/test";
 $link[$i][name] = "Test";
 $link[$i][item] = "test";
-*/
+
+// Task #5 сделать копию страницы test2, изменить название кнопки, обработчик кноки, изменить сообщение на test2
+$i++;
+$link[$i][url] = "/test2";
+$link[$i][name] = "Test2";
+$link[$i][item] = "test2";
 
 
 $i++;
 $link[$i][url] = "https://claim.airdrop-hunter.site/";
 $link[$i][name] = "Referrals";
+
+// Task #6 нужно создать новый пункт в центральном меню (там где Airdrops, Stats, Referrals) - пункт Hello
+$i++;
+$link[$i][url] = "/hello";
+$link[$i][name] = "Hello";
+$link[$i][item] = "hello";
 
 $l = count($link);
 for($i=0;$i<$l;$i++)

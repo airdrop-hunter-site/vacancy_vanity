@@ -1,0 +1,2 @@
+<!-- Task #4-5 открыть страницу http://<ip_you_server>/test + сделать копию страницы test2, изменить название кнопки, обработчик кноки, изменить сообщение на test2 -->
+<button class="btn btn-primary" onclick="test2()">test2</button>
