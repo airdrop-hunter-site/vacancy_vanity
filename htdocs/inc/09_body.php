@@ -1,10 +1,11 @@
 <?php
-//print "<body class=dark-theme>";
+print "<body class=dark-theme>";
 $t = $_COOKIE['theme'];
-if($t == "dark")
-$clas = "dark-theme";
-else
+
+if($t == "")
 $clas = "";
+else
+$clas = "dark-theme";
 
 print "<body id=body class=\"$clas\">";
 
