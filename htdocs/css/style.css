@@ -4367,6 +4367,8 @@ body.dark-theme .status-item {
 @media (min-width: 768px) {
   .deposit {
     display: block;
+    /* от себя - подкорректировал отступ кнопки Deposit */
+    margin-right: 10px;
   }
 }
 

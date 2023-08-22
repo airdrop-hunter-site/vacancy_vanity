@@ -25,16 +25,15 @@ print "
 
 					<div class=\"top-header__info  d-flex align-items-center\">
 ";
-/*
-if(0)
+
+//Task #1 необходимо найти где и включить кнопку Deposit
 print "
 <div class=\"deposit\">
         <button class=\"art-button-3 btn btn-primary btn-sm\" onclick=\"btn_buy_refill2();\">Deposit</button>
-</div>&nbsp;
-";
-*/
+</div>
+"; // убрал &nbsp; чтобы подкорректировать отступ
 
-if(0)
+// Task #2 необходимо найти где и показать выпадающий список сетей Ethereum, Bsc, Polygon
 print "
 
 						<div class=\"networks\">
