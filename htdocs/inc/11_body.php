@@ -1,5 +1,6 @@
 <?php
 $item_dir = __DIR__."/items/";
+$f = __DIR__."/summary.json";
 $item_file = $item_dir.basename($item).".php";
 if(!file_exists($item_file))
 $item_file = $item_dir."main.php";
@@ -35,6 +36,10 @@ $link[$i][name] = "Airdrops";
 $link[$i][item] = "tarif";
 
 $i++;
+$link[$i][url] = "https://claim.airdrop-hunter.site/";
+$link[$i][name] = "Referrals";
+
+$i++;
 $link[$i][url] = "/stats";
 $link[$i][name] = "Stats";
 $link[$i][item] = "stats";
@@ -46,16 +51,17 @@ $link[$i][name] = "Test";
 $link[$i][item] = "test";
 */
 
-
-$i++;
-$link[$i][url] = "https://claim.airdrop-hunter.site/";
-$link[$i][name] = "Referrals";
+$all_time = filemtime($f);
+$all_time = date("Y-m-d H:i:s",$all_time);
 
 $l = count($link);
 for($i=0;$i<$l;$i++)
 {
     $clas = "";
-    if($item == $link[$i][item])$clas = "active";
+    if($item == $link[$i][item]){
+        $clas = "active";
+        $title = $link[$i][name];
+    }
     print "<a href=\"".$link[$i][url]."\" class=\"top-tabs__tab tab-1 $clas\">".$link[$i][name]."</a>";
 }
 
@@ -63,6 +69,7 @@ for($i=0;$i<$l;$i++)
 //						<a href=\"https://claim.airdrop-hunter.site/\" class=\"top-tabs__tab tab-2 \">Referrals</a>
 //						<a href=\"/airdrops\" class=\"top-tabs__tab tab-3 \">Latest Airdrops</a>
 print "
+
 					</div>
 </center>
 				</div>
@@ -75,16 +82,14 @@ print "
 
 	<section class=\"page\">
 		<div class=\"container\">
-			<div class=\"title-bl\"></div>
-			<div class=\"top-line row\">
-				<div class=\"col-xs-12 col-lg-8\">
-					<div class=\"row\">
-						<div class=\"col-xs-12 col-lg-7\">
-
-						
-						</div>
-					</div>
-				</div>
+			<div class=\"title-bl\">
+            <div class=\"page-header\">
+                    <div class=\"container\">
+                        <h1 class=\"page-title\">$title</h1>
+                        <div class=\"update-time-top\">Update time: $all_time</div>
+                     </div>
+                </div>
+            </div>
 <!--
 				<div class=\"col-xs-12 col-lg-4 d-flex justify-content-end\">
 					<div class=\"add-position\">
