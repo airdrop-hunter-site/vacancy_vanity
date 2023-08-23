@@ -101,10 +101,6 @@ $txt .= "
                                 </div>
                                 <div class="box-bottom">
                                     <div class="box-line d-flex">
-                                        <div class="box-label">Update time</div>
-                                        <div class="box-value"><?php print $all_time;?></div>
-                                    </div>
-                                    <div class="box-line d-flex">
                                         <div class="box-label">Total Transactions</div>
                                         <div class="box-value"><?php print $all_txs;?></div>
                                     </div>

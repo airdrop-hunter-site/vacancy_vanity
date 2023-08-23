@@ -25,14 +25,13 @@ print "
 
 					<div class=\"top-header__info  d-flex align-items-center\">
 ";
-/*
-if(0)
+
+
 print "
 <div class=\"deposit\">
         <button class=\"art-button-3 btn btn-primary btn-sm\" onclick=\"btn_buy_refill2();\">Deposit</button>
 </div>&nbsp;
 ";
-*/
 
 if(0)
 print "
@@ -196,7 +195,7 @@ print "
 								
 							</div>
 						</div>
-<!--
+
 						<div class=\"languages\">
 							<a href=\"#\" class=\"languages__active\" id=\"dropdownLanguages\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
 								<span class=\"languages__btn d-flex align-items-center\">
@@ -228,7 +227,7 @@ print "
 								
 							</div>
 						</div>
--->
+
 					</div>
 				</div>
 			</div>

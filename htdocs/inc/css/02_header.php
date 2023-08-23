@@ -2,16 +2,15 @@
 {
   display: inline-block;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   border-radius: 10px;
   height: 40px;
-  padding: 10px 20px 16px;
+  padding: 11px 35px;
   box-sizing: border-box;
   text-decoration: none;
   background: #23acde;
-
 }
 
 body.dark-theme .art-button-3 {
