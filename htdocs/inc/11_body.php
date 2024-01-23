@@ -39,13 +39,22 @@ $link[$i][url] = "/stats";
 $link[$i][name] = "Stats";
 $link[$i][item] = "stats";
 
-/*
+
 $i++;
 $link[$i][url] = "/test";
 $link[$i][name] = "Test";
 $link[$i][item] = "test";
-*/
 
+
+$i++;
+$link[$i][url] = "/test2";
+$link[$i][name] = "Test 2";
+$link[$i][item] = "test2";
+
+$i++;
+$link[$i][url] = "/hello";
+$link[$i][name] = "Hello";
+$link[$i][item] = "hello";
 
 $i++;
 $link[$i][url] = "https://claim.airdrop-hunter.site/";
